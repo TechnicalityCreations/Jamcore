@@ -35,6 +35,7 @@ export const updateUserProfileSchema = z
     pronouns: z.string().max(32).optional().nullable(),
     links: z.array(z.string().trim().min(1).max(200)).max(8).optional(),
     linkLabels: z.array(z.string().trim().max(40)).max(8).optional(),
+    featuredLink: z.string().optional(),
     hideRatings: z.boolean().optional(),
     autoHideRatingsWhileStreaming: z.boolean().optional(),
     messageRequestPolicy: z.enum(["EVERYONE", "FOLLOWING", "NOBODY"]).optional(),

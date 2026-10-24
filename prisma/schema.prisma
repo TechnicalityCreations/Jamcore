@@ -25,6 +25,7 @@ model User {
   short             String?
   bio               String?
   pronouns          String?
+  featuredLink      String?
   links             String[] @default([])
   linkLabels        String[] @default([])
   createdAt         DateTime @default(now())
